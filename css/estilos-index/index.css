@@ -1,9 +1,10 @@
+/*
 body{
     background-color: rgb(34, 34, 34);
 }
 header{
     background-color: rgb(34, 34, 34);
-}
+}*/
 .logo-principal{
     padding-left: 0.5rem;
 }
@@ -17,9 +18,37 @@ header{
     padding-right: 0.5rem;
     
 }
+/*Efecto de resaltado en textos*/
+.negrita{
+    font-weight: 600;
+    color: #313131;
+}
+
+.about-text h2, p{
+    color: #535353;
+}
+/*Servicios*/
+.services{
+    margin-top: 30px;
+    background-color: #dadada;
+}
+
+.card-servicios{
+    margin-bottom: 30px;
+}
+.services .card-body i{
+    font-size: 60px;
+}
+.titulo-ser h2{
+    margin-top: -10px;
+}
+.card p{
+    color: #a09f9f;
+}
+
 .btn-btn-warning {
     color:rgb(253, 206, 118)
- }
+}
 .habitaciones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -1,6 +1,11 @@
 *{
     font-family: 'Cormorant', serif;
 }
+
+:root{
+    --color-hover-nav:#ffbb00;
+}
+
 .logo{
     margin-left: 100px;
 }/*
@@ -31,12 +36,13 @@
 }
 
 .nav-item a:hover{
-    color: #ffbb00;
+    color: var(--color-hover-nav);
 }
+
 .nav-item::after{
     content: "";
     display: block;
-    background: #e7aa00;
+    background: var(--color-hover-nav);
     width: 90%;
     margin-top: 3px;
     height: 3px;

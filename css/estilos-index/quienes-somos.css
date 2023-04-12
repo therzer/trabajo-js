@@ -1,0 +1,22 @@
+.imagenes-descripcion img{
+    position: relative;
+    top: 9%;
+    width: 300px;
+    height: 300px;
+}
+
+.imagenes{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagenes{
+        display: flex;
+        justify-content: center;
+    }
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

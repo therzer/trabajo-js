@@ -1,3 +1,9 @@
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="mensaje"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl){
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
 $(".tab").css("display","none");
 $("#tab-1").css("display","block");
 

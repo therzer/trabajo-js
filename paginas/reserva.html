@@ -86,9 +86,8 @@
 
             <div class="tab" id="tab-1">
                 <p>Datos del Cliente</p>
-                <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="form-control"
-                    for="colFormLabelSm">
-                <input type="text" placeholder="Apellido" name="apellido" id="apellido" class="form-control">
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="form-control" for="colFormLabelSm" data-bs-toggle="mensaje" title="Solo se puede ingresar letras sin espacios." data-bs-custom-class="custom-tooltip">
+                <input type="text" placeholder="Apellido" name="apellido" id="apellido" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar letras sin espacios."  data-bs-custom-class="custom-tooltip">
 
                 <div class="contendor-botton">
                     <div class="btn btn-warning" onclick="run(1,2);">Siguiente</div>
@@ -97,9 +96,12 @@
 
             <div class="tab" id="tab-2">
                 <p>Datos de contacto</p>
-                <input type="email" placeholder="Email" id="correo" class="form-control">
-                <input type="number" placeholder="Telefono" name="telefono" id="telefono" class="form-control">
-
+                <input type="email" placeholder="Email" id="correo" class="form-control"
+                data-bs-toggle="mensaje" title="Nesecita un @ y un .com"
+                data-bs-custom-class="custom-tooltip">
+                <input type="number" placeholder="Telefono" name="telefono" id="telefono" class="form-control"
+                data-bs-toggle="mensaje" title="Solo se puede ingresar números"
+                data-bs-custom-class="custom-tooltip">
                 <div class="contendor-botton">
                     <div class="btn btn-warning" onclick="run(2,1);">Anterior</div>
                     <div class="btn btn-warning" onclick="run(2,3);">Siguiente</div>
@@ -108,7 +110,7 @@
 
             <div class="tab" id="tab-3">
                 <p>Habitaciones</p>
-                <select name="habitaciones" id="habitaciones" class="habitaciones form-select">
+                <select name="habitaciones" id="habitaciones" class="habitaciones form-select"  data-bs-toggle="mensaje" title="Es nesecario selecionar una habitacion." data-bs-custom-class="custom-tooltip">
                     <option value="0">Seleccione</option>
                     <option value="Habitacion Premium Deluxe">Habitacion Premium Deluxe</option>
                     <option value="Habitacion Premium">Habitacion Premium</option>
@@ -124,7 +126,7 @@
 
             <div class="tab" id="tab-4">
                 <p>Fecha de reserva</p>
-                <input type="date" id="fecha" class="form-control">
+                <input type="date" id="fecha" class="form-control"  data-bs-toggle="mensaje" title="Ingresar una fecha es obligatorio." data-bs-custom-class="custom-tooltip">
 
                 <div class="contendor-botton">
                     <div class="btn btn-warning" onclick="run(4,3);">Anterior</div>
@@ -134,8 +136,8 @@
 
             <div class="tab" id="tab-5">
                 <p>Cuantos Adulto y Niños</p>
-                <input type="number" placeholder="Cuantos adultos" name="adulto" id="adulto" class="form-control">
-                <input type="number" placeholder="Cuantos niños" name="ninio" id="ninio" class="form-control">
+                <input type="number" placeholder="Cuantos adultos" name="adulto" id="adulto" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
+                <input type="number" placeholder="Cuantos niños" name="ninio" id="ninio" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
 
                 <div class="contendor-botton">
                     <div class="btn btn-warning" onclick="run(5,4);">Anterior</div>
@@ -173,7 +175,6 @@
 
     <!--pRUE-->
     <div class="fondo-bot">
-       
     </div>
 
     <!--Footer-->

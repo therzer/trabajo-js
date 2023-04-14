@@ -119,3 +119,7 @@ option:hover{
     left: 90px;
     color: #e6e6e6;
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: #ffc507;
+}

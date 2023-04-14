@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--Iconos de ICONS8-->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!--jsPDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="../css/estilos-reserva/reserva.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Inicio Menu-->
+    <header>
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+                <div class="container-fluid">
+                    <div class="logo-principal">
+                        <img src="../img/logo.png" alt="logotipo" class="logotipo">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-menu__items" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Habitaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reserva</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <!--Fin Menu-->
+
+    <!--Inicio Fondo Top-->
+    <div class="fondo-top__img">
+        <h1 class="h1-reserva">Reserva</h1>
+    </div>
+    <!--Fin Fondo Top-->
+
+    <!--Inicio Formulario de reserva-->
+    <div class="formulario-wizar">
+        <form action="" method="post" autocomplete="off" class="form-registro">
+            <h2>Registro</h2>
+
+            <div>
+                <span class="step" id="step-1">1</span>
+                <span class="step" id="step-2">2</span>
+                <span class="step" id="step-3">3</span>
+                <span class="step" id="step-4">4</span>
+                <span class="step" id="step-5">5</span>
+            </div>
+
+            <div class="tab" id="tab-1">
+                <p>Datos del Cliente</p>
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="form-control"
+                    for="colFormLabelSm">
+                <input type="text" placeholder="Apellido" name="apellido" id="apellido" class="form-control">
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(1,2);">Siguiente</div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-2">
+                <p>Datos de contacto</p>
+                <input type="email" placeholder="Email" id="correo" class="form-control">
+                <input type="number" placeholder="Telefono" name="telefono" id="telefono" class="form-control">
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(2,1);">Anterior</div>
+                    <div class="btn btn-warning" onclick="run(2,3);">Siguiente</div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-3">
+                <p>Habitaciones</p>
+                <select name="habitaciones" id="habitaciones" class="habitaciones form-select">
+                    <option value="0">Seleccione</option>
+                    <option value="Habitacion Premium Deluxe">Habitacion Premium Deluxe</option>
+                    <option value="Habitacion Premium">Habitacion Premium</option>
+                    <option value="Habitacion Basica Deluxe">Habitacion Basica Deluxe</option>
+                    <option value="Habitacion Basica">Habitacion Basica</option>
+                </select>
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(3,2);">Anterior</div>
+                    <div class="btn btn-warning" onclick="run(3,4);">Siguiente</div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-4">
+                <p>Fecha de reserva</p>
+                <input type="date" id="fecha" class="form-control">
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(4,3);">Anterior</div>
+                    <div class="btn btn-warning" onclick="run(4,5);">Siguiente</div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-5">
+                <p>Cuantos Adulto y Niños</p>
+                <input type="number" placeholder="Cuantos adultos" name="adulto" id="adulto" class="form-control">
+                <input type="number" placeholder="Cuantos niños" name="ninio" id="ninio" class="form-control">
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(5,4);">Anterior</div>
+                    <div class="btn btn-warning" onclick="run(5,6);">Siguiente</div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab-6">
+                <p>Confirmacion</p>
+                <p>Nombre:</p>
+                <input type="text" placeholder="" name="" id="NOMBRE-m" class="form-control" disabled>
+                <p>Apellido:</p>
+                <input type="text" placeholder="" name="" id="Apellido-m" class="form-control" disabled>
+                <p>Correo:</p>
+                <input type="text" placeholder="" name="" id="CORREO-m" class="form-control" disabled>
+                <p>Telefono:</p>
+                <input type="text" placeholder="" name="" id="TELEFONO-m" class="form-control" disabled>
+                <p>Habitacion:</p>
+                <input type="text" placeholder="" name="" id="HABITACION-m" class="form-control" disabled>
+                <p>Fecha:</p>
+                <input type="text" placeholder="" name="" id="FECHA-m" class="form-control" disabled>
+                <p>Cuantos adultos:</p>
+                <input type="text" placeholder="ADULTO" name="" id="ADULTO-m" class="form-control" disabled>
+                <p>Cuanto niños</p>
+                <input type="text" placeholder="NIÑO" name="" id="NIÑO-m" class="form-control" disabled>
+
+                <div class="contendor-botton">
+                    <div class="btn btn-warning" onclick="run(6,5);">Anterior</div>
+                    <a class="btn btn-warning btn-reservar" onclick="generarPDF();">Reservar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Fin Formulario de reserva-->
+
+    <!--pRUE-->
+    <div class="fondo-bot">
+       
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="botones-footer">
+            <div class="logo">
+                <img src="../img/logo.png" alt="logotipo" class="logotipo">
+            </div>
+
+            <div class="contacto-footer">
+                <h3>Contacto:</h3>
+                <p>Tel: 0220-444-5657</p>
+            </div>
+            <div class="redes-footer">
+                <h3>Redes Sociales:</h3>
+                <i class="lab la-instagram"></i>
+                <i class="lab la-twitter"></i>
+                <i class="lab la-facebook-square"></i>
+            </div>
+
+            <div class="pagos">
+                <h3>Metodos de pago:</h3>
+                <img src="../img/american-expres.svg" alt="american-expres">
+                <img src="../img/mastercard.svg" alt="mastercard">
+                <img src="../img/visa.svg" alt="visa">
+            </div>
+
+            <div class="soporte">
+                <a href="#"><button type="button" class="btn btn-warning">Soporte</button></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/reserva.js"></script>
+</body>
+
+</html>

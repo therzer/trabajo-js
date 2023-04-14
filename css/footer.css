@@ -1,0 +1,53 @@
+
+footer{
+    background-color: rgb(19, 19, 19);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.botones-footer{
+    display: flex;
+    column-gap: 4rem;
+    color: rgb(250, 235, 215);
+}
+.footer h3{
+    color: rgb(250, 235, 215);
+    font-size: 1rem;
+}
+.mediosDePago{
+    height: 8rem;
+    background-color: rgb(250, 235, 215);
+    border-radius: 1rem;
+}
+
+.pagos img{
+    width: 30px;
+    height: 30px;
+}
+
+.redes-footer i{
+    font-size: 25px;
+    color: var(--color-before-h2-about);
+}
+
+.redes-footer i:hover{
+    height: 25px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #ffbb00;
+    color: var(--color-parrafos);
+}
+
+.soporte{
+    color: var(--color-text-botones)
+}

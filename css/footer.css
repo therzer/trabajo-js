@@ -31,6 +31,9 @@
     font-size: 18px;
   }
   
+  .contacto p {
+    color: #fffffa;
+  }
   .icons {
     position:relative;
     display:flex;

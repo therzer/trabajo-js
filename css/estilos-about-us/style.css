@@ -39,7 +39,7 @@
 }
 
 .hd {
-  margin-right: 60px;
+  margin-left: 30px;
   font-size: 20px;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -66,12 +66,12 @@ body {
 
 .titulo {
   color:#ffbb00cc;
-  margin-left: 300px;
+  margin-left: 360px;
   position: relative;
   display: flex;
-  width: 50%;
+  width: 650px;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .integrantes {

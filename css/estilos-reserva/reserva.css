@@ -1,0 +1,125 @@
+body{
+    background-color: #eeeded;
+}
+
+.fondo-top__img{
+    background-image: url("../../img/interior.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.h1-reserva{
+    position: absolute;
+    color: #FFF;
+    top:30%;
+    left: 90px;
+}
+
+.formulario-wizar{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.form-registro h2,p,span{
+    color: #535353;
+}
+
+.form-registro h2::before{
+    content: "";
+    display: inline-flex;
+    background: #ffe600;
+    width: 20%;
+    margin-right: 10px;
+    margin-top: -5px;
+    height: 5px;
+}
+
+.form-registro h2::after{
+    content: "";
+    display: inline-flex;
+    background: #ffe600;
+    width: 20%;
+    margin-left: 10px;
+    margin-top: -5px;
+    height: 5px;
+}
+
+.step{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #fcd630;
+    color: #f7f7f7;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 2px;
+    opacity: 0.45;
+}
+
+.tab input,
+.tab select{
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 9px;
+}
+
+.tab select:focus, input[type]:focus{
+    border-color: #fcd630;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #fcd630;
+    outline: 0 none;
+}
+
+option:hover{
+    color: #fcd630;
+}
+.btn{
+    color: #535353;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.btn-reservar{
+    background-color: #ffe600;
+    border: none;
+}
+
+#tab-6 input{
+    text-align: center;
+    margin-top: -18px;
+}
+
+#tab-6 p{
+    margin-top: 9px;
+}
+
+.fondo-bot{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    clip-path: polygon(51% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background-color: #ffc507;
+} 
+
+.fondo-bot h2{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    left: 90px;
+    color: #e6e6e6;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #ffc507;
+}

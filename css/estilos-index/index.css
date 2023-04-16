@@ -1,0 +1,84 @@
+/*
+body{
+    background-color: rgb(34, 34, 34);
+}
+header{
+    background-color: rgb(34, 34, 34);
+}*/
+
+
+:root{
+    --color-before-h2-about:#ffbb00;
+    --color-text-botones: #363636;
+    --color-parrafos:#a09f9f;
+}
+
+.botones{
+    padding-right: 0.5rem;
+    
+}
+/*Efecto de resaltado en textos*/
+.negrita{
+    font-weight: 600;
+    color: #313131;
+}
+
+.about-text h2, p{
+    color: #535353;
+}
+/*Servicios*/
+.services{
+    margin-top: 30px;
+    background-color: #dadada;
+}
+
+.card-body{
+    height: 300px;
+}
+/*Linea narajan al costado de ¿Quienes somos?*/
+.about-text h2::before{
+    content: "";
+    display: inline-flex;
+    background: var(--color-before-h2-about);
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -5px;
+    height: 5px;
+}
+
+
+.card-servicios{
+    margin-bottom: 30px;
+}
+.services .card-body i{
+    font-size: 60px;
+}
+.titulo-ser h2{
+    margin-top: 15px;
+}
+.card p{
+    color: var(--color-parrafos);
+}
+
+.leer-mas{
+    color: var(--color-text-botones);
+}
+/*
+.habitaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.habitacion1, .habitacion2, .habitacion3, .habitacion4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+*/
+
+.titulo-habitaciones{
+    width: 100%;
+    margin-bottom: -16px;
+    margin-top: 10px;
+}

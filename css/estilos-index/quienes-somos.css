@@ -10,6 +10,9 @@
     margin-bottom: 50px;
 }
 
+.img-fluid{
+    border-radius:10px;
+}
 @media screen and (max-width: 768px) {
     .imagenes{
         display: flex;

@@ -3,26 +3,35 @@
     --color-text-botones: #363636;
     --color-parrafos:#a09f9f;
   }
-  
-.footer{
 
+  .footer{
     padding-top: 10px;
     background-color: rgba(19, 19, 19, 0.959);
     position: relative;
     display: flex;
     width: 100%;
     height: 200px;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .botones {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     color: rgb(250, 235, 215);
   }
-  
+
+  .copyright {
+    padding-top:10px;
+    background-color: #000000;
+    text-align: center;
+  }  
+  .copyright p {
+  color:#dfdfdf;
+  }
+
   .footer-logo img {
     margin-top: 15px;
     background-color: rgb(250, 235, 215);

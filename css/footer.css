@@ -1,5 +1,11 @@
+:root{
+    --color-before-h2-about:#ffbb00;
+    --color-text-botones: #363636;
+    --color-parrafos:#a09f9f;
+  }
+  
 .footer{
-    margin-top: 35px;
+
     padding-top: 10px;
     background-color: rgba(19, 19, 19, 0.959);
     position: relative;

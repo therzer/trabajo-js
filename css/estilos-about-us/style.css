@@ -206,15 +206,23 @@ body {
   display: flex;
   width: 100%;
   height: 200px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .botones {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
   color: rgb(250, 235, 215);
+}
+
+.copyright {
+  padding-top:10px;
+  background-color: #000000;
+  color:#dfdfdf;
+  text-align: center;
 }
 
 .footer-logo img {

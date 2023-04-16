@@ -123,7 +123,7 @@ function generarPDF(){
     const doc = new jsPDF();
 
 
-    var fecha = "Fecha:"
+    var fecha = "Fecha:";
     var fechaActual = new Date();
     var fechaActualTexto = fechaActual.toISOString().slice(0, 10);
     
@@ -131,7 +131,7 @@ function generarPDF(){
     logo.src = '../img/logo.png';
 
     doc.setFontSize(20);
-    doc.addImage(logo,'PNG',10, 5, 25,25)
+    doc.addImage(logo,'PNG',10, 5, 25,25);
     doc.text(titulo, 40, 20);
     doc.text(fecha + ' ' + fechaActualTexto, 120, 20);
 
@@ -148,6 +148,6 @@ function generarPDF(){
     doc.text(adulto + ' ' + adulto1, 20, 109);
     doc.text(ninio + ' ' + ninio1, 20, 119);
 
-    doc.save("reserva.pdf")
+    doc.save("reserva.pdf");
 }
 

@@ -25,7 +25,8 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
           <div class="container-fluid">
             <div class="logo-principal">
-              <img src="img/logo.png" alt="logotipo" class="logotipo">
+              <div class="navlogo"><img src="img/logo.png" alt="logotipo" class="logotipo"><p class="title"><i> Harmony Residence</i></p></div>
+              
             </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -36,11 +37,11 @@
                           <a class="nav-link" href="index.html">Inicio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Habitaciones</a>
+                          <a class="nav-link" href="#carousel-indicators">Habitaciones</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
-                    </li>
+                        <a class="nav-link" href="indexAboutUs.html">Nuestro Equipo</a>
+                      </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Contacto</a>
                       </li>
@@ -66,7 +67,7 @@
         <div class="carousel-item active">
           <img src="img/hotel-4.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <h5>Nombre del Hotel</h5>
+            <h5>Harmony Residence</h5>
             <p>brebe descripcion del hotel---------</p>
             <p><a href="#" class="btn btn-warning mt-3 leer-mas">Leer Más</a></p>
           </div>
@@ -182,12 +183,11 @@
             <p>Brindamos confort y un alto nivel de atención.
             </p>
             <h2>Rooms y Suites</h2>
-            <p><a href="#" class="btn btn-warning mt-3 leer-mas">Ver todo</a></p>
           </div>
         </div>
       </div>
 
-      <div class="carousel-indicators">
+      <div class="carousel-indicators" id="carousel-indicators">
         <button type="button" data-bs-target="#carousel-habitaciones" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carousel-habitaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>

@@ -53,11 +53,7 @@ function run(hideTab, showTab){
             if(hideTab == 3){
                 const habitacion = document.querySelector("#habitaciones").value;
             
-                if(habitacion == "0"){
-                    var intro = document.getElementById('habitaciones');
-                    intro.style.backgroundColor = '#ffdddd';
-                    return false;
-                }
+                console.log(habitacion);
             }
 
             if(y[i].value == ""){

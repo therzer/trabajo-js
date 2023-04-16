@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--Iconos de ICONS8-->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <link rel="stylesheet" href="../css/estilos-contacto/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <!--Inicio Menu-->
+    <header>
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+            <div class="container-fluid">
+            <div class="logo-principal">
+                <div class="navlogo"><img src="../img/logo.png" alt="logotipo" class="logotipo"><p class="title"><i> Harmony Residence</i></p></div>
+                
+            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-menu__items" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel-indicators">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../indexAboutUs.html">Nuestro Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Fin Menu-->
+
+    <!--Fondo top-->
+    <div class="fondo-top">
+        <h2 class="contacto-h2">Contacto</h2>
+    </div>
+
+    <!--Datos de contacto-->
+    <article class="inf__contacto">
+		<div class="dato__contacto">
+			<h2><n>Información de contacto</n></h2>
+			<hr>
+				<p><i class="las la-map-marker"></i> Av. Boulevard Seinfield 150</p>
+				<p><i class="las la-phone"></i></i>0220-444-5657</p>
+				<p><i class="lar la-envelope"></i>support_harmony@email.com</p>
+			
+		</div>
+		<div class="ubicacion__mapa">
+            <iframe class="mapa-ubi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9056.021040673642!2d-66.15717342839329!3d-17.383556021290307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3740f177396c3%3A0x4641e88b3a76b96c!2sHotel%20Luxor!5e0!3m2!1ses!2sar!4v1680130222706!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</article>
+
+    <!--form contacto-->
+    <section class="enviar__correo">
+		<div class="contenedor">
+            <h2 class="titulo-correo">Contactanos</h2>
+            <h3 class="subtitulo-correo">Lo apreciariamos mucho</h3>
+            <div class="correo__env">
+                <form class="form-contacto" action="https://formspree.io/f/xvonvjae"
+                method="POST" name="frmEnv">
+                    <input type="email"  id="correo" placeholder="Email" name="email">
+                    <input  id="contenido" placeholder="Ingrese su mensaje..." class="textarea contenido" name="message"></input>
+                    <a class="btn btn-warning mt-3 enviar" onclick="validacion()">Enviar</a>
+                </form>
+            </div>
+        </div>
+	</section>
+
+
+    <footer class="footer">
+        
+        <div class="botones">
+            <div class="footer-logo">
+                <a href="index.html" class="logo"><img src="../img/logo.png" alt="" class="logo"></a>
+            </div>
+
+            <div class="contacto">
+                <h4>• Contacto:</h4>
+                <p>- Dirección: Av. Boulevard Seinfield 150</p>
+                <p>- Correo: support_harmony@email.com</p>
+                <p>- Tel: 0220-444-5657</p>
+            </div>
+            
+            <div class="redes">
+                <h4>• Redes Sociales:</h4>
+                <div class="icons">
+                    <div class="text"><a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a> Instagram</div>
+                    <div class="text"><a href="https://www.twitter.com" target="_blank"><i class="lab la-instagram"></i></a> Twitter</div>
+                    <div class="text"><a href="https://www.facebook.com" target="_blank"><i class="lab la-instagram"></i></a> Facebook</div>
+                </div>
+            </div>
+
+            <div class="pagos">
+                <h4>• Métodos de pago:</h4>
+                <div class="img-pagos">
+                    <div class="text"><img src="../img/american-expres.svg" alt="american-expres"> American Express</div>
+                    <div class="text"><img src="../img/mastercard.svg" alt="mastercard"> Mastercard</div>
+                    <div class="text"><img src="../img/visa.svg" alt="visa"> Visa</div>
+                </div>
+            </div>
+
+            <div class="map">
+                <h4> • Vení a Conocernos!</h4>
+                <div class="api"></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="../js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

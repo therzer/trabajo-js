@@ -94,7 +94,6 @@ function recolector() {
     ninio1 = document.querySelector("#ninio").value;
 }
 
-
 function mostrar(){
     recolector();
 

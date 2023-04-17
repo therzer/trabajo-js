@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="../css/footer.css">
     
     <link rel="stylesheet" href="../css/estilos-contacto/contacto.css">
+    <!--Api mapa-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <script src="../js/api.js"></script>
+    
     <title>Contacto</title>
 </head>
 <body>
@@ -132,7 +137,9 @@
 
             <div class="map">
                 <h4> • Vení a Conocernos!</h4>
-                <div class="api"></div>
+                <div id="api">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly" defer class="mapa"></script>
+                </div>
             </div>
         </div>
         <div class="copyright"><p>Hotel Harmony Residence. All rights reserved, 2023 - Website by Grupo 4</p></div>

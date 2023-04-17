@@ -1,14 +1,8 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="mensaje"]'));
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl){
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
 function validacion(){
     var contenido = document.getElementById('contenido').value;
     var correo = document.getElementById('correo').value;
 
     var RegularCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    var val=0;
 
     if(!RegularCorreo.test(correo)  || correo ==""){
         var correo1 = document.getElementById("correo");

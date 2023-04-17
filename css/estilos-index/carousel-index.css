@@ -38,6 +38,14 @@
     color: var(--color-parrafos);
 }
 
+.habs .carousel-caption{
+    background-color: #00000094;
+    border-radius: 20px;
+}
+
+.habs .carousel-caption a{
+    margin-top: 25px;
+}
 .carousel p {
     color:#dadada;
     font-size:20px;

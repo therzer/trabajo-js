@@ -171,7 +171,7 @@ body {
 }
 
 .foto3 {
-  background-image: url();
+  background-image: url(foto-3.png);
   background-size: cover;
   position: relative; 
   display: flex;

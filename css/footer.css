@@ -10,7 +10,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .botones {
@@ -48,6 +48,7 @@
   .contacto p {
     color: #fffffa;
   }
+
   .icons {
     position:relative;
     display:flex;
@@ -94,8 +95,12 @@
   
   .map{
     color:rgb(250, 235, 215);
-    border: 1px solid green;
     height:160px;
+    width:400px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .text {
@@ -107,15 +112,15 @@
     letter-spacing: 0.3px;
   }
   
-  .map {
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  #api {
+    border-radius: 15px;
+    width:100%;
+    height: 100%;
   }
-  .api {
-    border: 1px solid green;
-    margin: 1px 1px;
-    width:150px;
-    height: 100px;
+  
+  .mapa {
+    position:relative;
+    display:flex;
+    width:100%;
+    height:100%;
   }

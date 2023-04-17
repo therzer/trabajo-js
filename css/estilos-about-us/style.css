@@ -143,7 +143,7 @@ body {
 }
 
 .foto1 {
-  background-image: url(foto-1.png);
+  background-image: url();
   background-size: cover;
   position: relative; 
   display: flex;
@@ -185,7 +185,7 @@ body {
 }
 
 .foto4 {
-  background-image: url();
+  background-image: url(foto-4.png);
   background-size: cover;
   position: relative; 
   display: flex;
@@ -286,8 +286,12 @@ body {
 
 .map{
   color:rgb(250, 235, 215);
-  border: 1px solid green;
   height:160px;
+  width:400px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text {
@@ -299,15 +303,15 @@ body {
   letter-spacing: 0.3px;
 }
 
-.map {
-  position: relative;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+#api {
+  border-radius: 15px;
+  width:100%;
+  height: 100%;
 }
-.api {
-  border: 1px solid green;
-  margin: 1px 1px;
-  width:150px;
-  height: 100px;
+
+.mapa {
+  position:relative;
+  display:flex;
+  width:100%;
+  height:100%;
 }

@@ -11,7 +11,15 @@ function run(hideTab, showTab){
     //validacion
     if(hideTab < showTab){
         x = $("#tab-"+hideTab);
-        y = $(x).find("input", "option", "date");
+        y = $(x).find("input", "select");
+
+        if(hideTab == 3){
+            var selected = document.getElementById('habitaciones');
+            if(selected.value == 0 || selected.value == ""){
+                selected.style.background = '#ffdddd';
+                return false;
+            }
+        }
 
         for(i = 0; i < y.length; i++){
             if(hideTab == 1){
@@ -49,13 +57,6 @@ function run(hideTab, showTab){
                     return false;
                 }
             }
-    
-            if(hideTab == 3){
-                const habitacion = document.querySelector("#habitaciones").value;
-            
-                console.log(habitacion);
-            }
-
             if(y[i].value == ""){
                 $(y[i]).css("background", "#ffdddd");
                 return false;
@@ -76,6 +77,15 @@ function run(hideTab, showTab){
 
     if(hideTab == 5){
         mostrar();
+    }
+}
+
+
+function validarSelect(){
+    var selected = document.getElementById('habitaciones');
+    if(selected.value == 0 || selected.value == ""){
+        selected.style.background = '#ffdddd';
+        return false;
     }
 }
 

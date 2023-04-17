@@ -60,7 +60,6 @@
     height: 3px;
     clip-path: var(--clippy);
     transition: clip-path .3s;
-
 }
 
 .navbar{
@@ -79,23 +78,15 @@
     flex-direction: row;
     align-items: center;
 }
-.navlogo p {
-    padding-top: 10px;
-    margin-left:20px;
-    color:#ffbb00cc;
-    text-align: center;
-    font-size: 35px;
-    justify-content: center;
-}
 
 .titulo {
     color:#ffbb00cc;
-    margin-left: 400px;
+    margin-left: 530px;
     position: relative;
     display: flex;
-    width: 50%;
+    width: 650px;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
   }
 .titulo p {
     color: #ffbb00cc;

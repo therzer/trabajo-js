@@ -7,12 +7,16 @@
     min-height: 300px;
 }
 
+
 .carousel-habitaciones{
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 20px;    
 }
 
+.carousel-index-top .carousel-caption p {
+    font-size:20px;
+}
 .habitacion-item{
     height: 90vh;
     min-height: 300px;

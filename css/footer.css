@@ -10,12 +10,7 @@
     position: relative;
     display: flex;
     width: 100%;
-<<<<<<< HEAD
     flex-direction: row;
-=======
-    height: 200px;
-    flex-direction: column;
->>>>>>> 6a7daa14df150da5a6c5c7a074301ac3571e0937
   }
   
   .botones {

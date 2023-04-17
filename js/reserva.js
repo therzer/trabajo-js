@@ -80,15 +80,6 @@ function run(hideTab, showTab){
     }
 }
 
-
-function validarSelect(){
-    var selected = document.getElementById('habitaciones');
-    if(selected.value == 0 || selected.value == ""){
-        selected.style.background = '#ffdddd';
-        return false;
-    }
-}
-
 function recolector() {
     nombre1 = document.querySelector("#nombre").value;
     apellido1 = document.querySelector("#apellido").value;

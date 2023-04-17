@@ -129,7 +129,7 @@ function generarPDF(){
     adulto = "Adultos:",
     ninio = "Niños:";
 
-    const { jsPDF } = window.jspdf;
+    const { jsPDF } = window.jsPDF;
     const doc = new jsPDF();
 
 
@@ -157,7 +157,6 @@ function generarPDF(){
     doc.text(fecha + ' ' + fecha1, 20, 99);
     doc.text(adulto + ' ' + adulto1, 20, 109);
     doc.text(ninio + ' ' + ninio1, 20, 119);
-
-    doc.save("reserva.pdf");
+    doc.save("Reserva.pdf");
 }
 

@@ -143,7 +143,7 @@ body {
 }
 
 .foto1 {
-  background-image: url();
+  background-image: url(foto-1.png);
   background-size: cover;
   position: relative; 
   display: flex;

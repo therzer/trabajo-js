@@ -143,7 +143,7 @@ body {
 }
 
 .foto1 {
-  background-image: url(foto-1.png);
+  background-image: url();
   background-size: cover;
   position: relative; 
   display: flex;
@@ -185,7 +185,7 @@ body {
 }
 
 .foto4 {
-  background-image: url();
+  background-image: url(foto-4.png);
   background-size: cover;
   position: relative; 
   display: flex;

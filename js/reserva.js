@@ -72,11 +72,12 @@ function run(hideTab, showTab){
         if(hideTab == 5){
             var adulto = document.querySelector("#adulto").value;
 
-            if(adulto < 1){
+            if(7 > adulto < 1){
                 var adult = document.getElementById('adulto');
                 adult.style.backgroundColor = '#ffdddd';
                 return false;
             }
+            
         }
     }
 

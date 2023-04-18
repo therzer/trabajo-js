@@ -1,152 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!--Iconos de ICONS8-->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/estilos-contacto/contacto.css">
+  <!--Api mapa-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="../js/api.js"></script>
 
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!--Iconos de ICONS8-->
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <title>Contacto</title>
 
-    <link rel="stylesheet" href="../css/menu.css">
-
-    <link rel="stylesheet" href="../css/footer.css">
-    
-    <link rel="stylesheet" href="../css/estilos-contacto/contacto.css">
-    <!--Api mapa-->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    
-    <script src="../js/api.js"></script>
-
-    <title>Contacto</title>
 </head>
-<body>
-    
-    <!--Inicio Menu-->
-    <header>
-        <div class="navbar">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
-            <div class="container-fluid">
-            <div class="logo-principal">
-                <div class="navlogo"><img src="../img/logo.png" alt="logotipo" class="logotipo"></div>
-                
-            </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="titulo d-none d-xl-block">
-                    <p><i>•~~• Harmony Residence •~~•</i></p>
-                </div>
-                <div class="collapse navbar-collapse nav-menu__items" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html#confort">Habitaciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../indexAboutUs.html">Nuestro Equipo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reserva.html">Reserva</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--Fin Menu-->
 
-    <!--Fondo top-->
-    <div class="fondo-top">
-        <h2 class="contacto-h2">Contacto</h2>
+<body>   
+  <!--Inicio header-->
+  <header>
+        
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+        <div class="container-fluid">
+          
+          <div class="logo-principal">
+            <div class="navlogo"><img src="../img/logo.png" alt="logotipo" class="logotipo"></div>
+          </div>
+          
+          <div class="titulo d-none d-xl-block">
+            <p><i>•~~• Harmony Residence •~~•</i></p>
+          </div>
+
+          <div class="collapse navbar-collapse nav-menu__items" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#confort">Habitaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../indexAboutUs.html">Nuestro Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reserva.html">Reserva</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
     </div>
 
-    <!--Datos de contacto-->
-    <article class="inf__contacto">
-		<div class="dato__contacto">
-			<h2><n>Información de contacto</n></h2>
-			<hr>
-				<p><i class="las la-map-marker"></i>Partida Paraíso - La Villa Paradís</p>
-				<p><i class="las la-phone"></i></i>0220-444-5657</p>
-				<p><i class="lar la-envelope"></i>support_harmony@email.com</p>
-                <hr>
-                <p>Si necesita comunicarse con nosotros, estamos a su disposición para responder cualquier pregunta o inquietud que tenga sobre nuestro hotel y servicios. <br> ¡Gracias por elegir nuestro hotel y esperamos darle la bienvenida en su próxima estadía!. </p>
-		</div>
-		<div class="ubicacion__mapa">
-            <iframe class="mapa-ubi" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3122.5631749524937!2d-0.2592359880160538!3d38.497720470069396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDI5JzUxLjgiTiAwwrAxNScyNC4wIlc!5e0!3m2!1ses!2sar!4v1681770206953!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-	</article>
+  </header>
+  <!--Fin header-->
 
-    <!--form contacto-->
-    <section class="enviar__correo">
-		<div class="contenedor">
-            <h2 class="titulo-correo">Contactanos</h2>
-            <h3 class="subtitulo-correo">Lo apreciariamos mucho</h3>
+  <!--Fondo top-->
+  <div class="fondo-top">
+    <h2 class="contacto-h2">Contacto</h2>
+  </div>
+
+  <!--Datos de contacto-->
+  <article class="inf__contacto">
+	<div class="dato__contacto">
+	  <h2><n>Información de contacto</n></h2>
+	  <hr>
+	  <p><i class="las la-map-marker"></i>Partida Paraíso - La Villa Paradís</p>
+	  <p><i class="las la-phone"></i></i>0220-444-5657</p>
+	  <p><i class="lar la-envelope"></i>support_harmony@email.com</p>
+      <hr>
+      <p>Si necesita comunicarse con nosotros, estamos a su disposición para responder cualquier pregunta o inquietud que tenga sobre nuestro hotel y servicios. <br> ¡Gracias por elegir nuestro hotel y esperamos darle la bienvenida en su próxima estadía!. </p>
+	</div>
+	<div class="ubicacion__mapa">
+      <iframe class="mapa-ubi" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3122.5631749524937!2d-0.2592359880160538!3d38.497720470069396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDI5JzUxLjgiTiAwwrAxNScyNC4wIlc!5e0!3m2!1ses!2sar!4v1681770206953!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </article>
+
+  <!--form contacto-->
+  <section class="enviar__correo">
+	<div class="contenedor">
+      <h2 class="titulo-correo">Contactanos</h2>
+      <h3 class="subtitulo-correo">Lo apreciariamos mucho</h3>
             
-            <div class="correo__env">
-                <form class="form-contacto" action="https://formspree.io/f/xvonvjae"
-                method="POST" name="frmEnv">
-                    <input type="email"  id="correo" placeholder="Email" name="email">
-                    <input  id="contenido" placeholder="Ingrese su mensaje..." class="textarea contenido" name="message"></input>
-                    <a class="btn btn-warning mt-3 enviar" onclick="validacion()">Enviar</a>
-                </form>
-            </div>
+      <div class="correo__env">
+        <form class="form-contacto" action="https://formspree.io/f/xvonvjae" method="POST" name="frmEnv">
+          <input type="email"  id="correo" placeholder="Email" name="email">
+          <input  id="contenido" placeholder="Ingrese su mensaje..." class="textarea contenido" name="message"></input>
+          <a class="btn btn-warning mt-3 enviar" onclick="validacion()">Enviar</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--fin form contacto-->
+
+  <!--Inicio footer-->
+  <footer class="footer">
+      
+    <div class="botones">
+      
+      <div class="footer-logo">
+        <a href="../index.html" class="logo"><img src="../img/logo.png" alt="" class="logo"></a>
+      </div>
+
+      <div class="contacto">
+        <h4>• Contacto:</h4>
+        <p>- Dirección: Partida Paraíso - La Villa Paradís</p>
+        <p>- Correo: support_harmony@email.com</p>
+        <p>- Tel: 0220-444-5657</p>
+      </div>
+
+      <div class="redes">
+        <h4>• Redes Sociales:</h4>
+        <div class="icons">
+          <div class="text">
+            <a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a> Instagram
+          </div>
+          <div class="text">
+            <a href="https://www.twitter.com" target="_blank"><i class="lab la-twitter"></i></a> Twitter
+          </div>
+          <div class="text">
+            <a href="https://www.facebook.com" target="_blank"><i class="lab la-facebook"></i></a> Facebook
+          </div>
         </div>
-	</section>
+      </div>
 
-
-    <footer class="footer">
-        
-        <div class="botones">
-            <div class="footer-logo">
-                <a href="index.html" class="logo"><img src="../img/logo.png" alt="" class="logo"></a>
-            </div>
-
-            <div class="contacto">
-                <h4>• Contacto:</h4>
-                <p>- Dirección: Partida Paraíso - La Villa Paradís</p>
-                <p>- Correo: support_harmony@email.com</p>
-                <p>- Tel: 0220-444-5657</p>
-            </div>
-            
-            <div class="redes">
-                <h4>• Redes Sociales:</h4>
-                <div class="icons">
-                    <div class="text"><a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a> Instagram</div>
-                    <div class="text"><a href="https://www.twitter.com" target="_blank"><i class="lab la-twitter"></i></a> Twitter</div>
-                    <div class="text"><a href="https://www.facebook.com" target="_blank"><i class="lab la-facebook"></i></a> Facebook</div>
-                </div>
-            </div>
-
-            <div class="pagos">
-                <h4>• Métodos de pago:</h4>
-                <div class="img-pagos">
-                    <div class="text"><img src="../img/american-expres.svg" alt="american-expres"> American Express</div>
-                    <div class="text"><img src="../img/mastercard.svg" alt="mastercard"> Mastercard</div>
-                    <div class="text"><img src="../img/visa.svg" alt="visa"> Visa</div>
-                </div>
-            </div>
-
-            <div class="map">
-                <h4> • Vení a Conocernos!</h4>
-                    <div id="api">
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly" defer class="mapa"></script>
-                    </div>
-            </div>
+      <div class="pagos">
+        <h4>• Métodos de pago:</h4>
+        <div class="img-pagos">
+          <div class="text">
+            <img src="img/american-expres.svg" alt="american-expres"> American Express
+          </div>
+          <div class="text">
+            <img src="img/mastercard.svg" alt="mastercard"> Mastercard
+          </div>
+          <div class="text"><img src="img/visa.svg" alt="visa" /> Visa</div>
         </div>
-        <div class="copyright"><p>Hotel Harmony Residence. All rights reserved, 2023 - Website by Grupo 4</p></div>
-    </footer>
+      </div>
 
-    <script type="text/javascript" src="../js/contacto.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+      <div class="map">
+        <h4>• Vení a Conocernos!</h4>
+        <div id="api">
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly" defer class="mapa"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Hotel Harmony Residence. All rights reserved, 2023 - Website by Grupo 4
+      </p>
+    </div>
+
+  </footer>
+  <!--Fin footer-->
+
+  <!--Scripts-->
+  <script type="text/javascript" src="../js/contacto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
 </body>
 </html>

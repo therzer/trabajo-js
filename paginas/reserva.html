@@ -141,42 +141,44 @@
           </div>
         </div>
 
-            <div class="tab" id="tab-5">
-                <p>Cuantos Adultos y Niños</p>
-                <input type="number" placeholder="Cuantos adultos" name="adulto" id="adulto" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
-                <input type="number" placeholder="Cuantos niños" name="ninio" id="ninio" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
+        <div class="tab" id="tab-5">
+          <p>Cuantos Adultos y Niños</p>
+          
+          <input type="number" placeholder="Cuantos adultos" name="adulto" id="adulto" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
+          <input type="number" placeholder="Cuantos niños" name="ninio" id="ninio" class="form-control"  data-bs-toggle="mensaje" title="Solo se puede ingresar números" data-bs-custom-class="custom-tooltip">
 
-                <div class="contendor-botton">
-                    <div class="btn btn-warning" onclick="run(5,4);">Anterior</div>
-                    <div class="btn btn-warning" onclick="run(5,6);">Siguiente</div>
-                </div>
-            </div>
+          <div class="contendor-botton">
+            <div class="btn btn-warning" onclick="run(5,4);">Anterior</div>
+            <div class="btn btn-warning" onclick="run(5,6);">Siguiente</div>
+          </div>
+        </div>
 
-            <div class="tab" id="tab-6">
-                <p>Confirmación</p>
-                <p>Nombre:</p>
-                <input type="text" placeholder="" name="" id="NOMBRE-m" class="form-control" disabled>
-                <p>Apellido:</p>
-                <input type="text" placeholder="" name="" id="Apellido-m" class="form-control" disabled>
-                <p>Correo:</p>
-                <input type="text" placeholder="" name="" id="CORREO-m" class="form-control" disabled>
-                <p>Teléfono:</p>
-                <input type="text" placeholder="" name="" id="TELEFONO-m" class="form-control" disabled>
-                <p>Habitación:</p>
-                <input type="text" placeholder="" name="" id="HABITACION-m" class="form-control" disabled>
-                <p>Fecha:</p>
-                <input type="text" placeholder="" name="" id="FECHA-m" class="form-control" disabled>
-                <p>Cuántos adultos:</p>
-                <input type="text" placeholder="ADULTO" name="" id="ADULTO-m" class="form-control" disabled>
-                <p>Cuántos niños</p>
-                <input type="text" placeholder="NIÑO" name="" id="NIÑO-m" class="form-control" disabled>
+        <div class="tab" id="tab-6">
+          <p>Confirmación</p>
+          <p>Nombre:</p>
+          <input type="text" placeholder="" name="" id="NOMBRE-m" class="form-control" disabled>
+          <p>Apellido:</p>
+          <input type="text" placeholder="" name="" id="Apellido-m" class="form-control" disabled>
+          <p>Correo:</p>
+          <input type="text" placeholder="" name="" id="CORREO-m" class="form-control" disabled>
+          <p>Teléfono:</p>
+          <input type="text" placeholder="" name="" id="TELEFONO-m" class="form-control" disabled>
+          <p>Habitación:</p>
+          <input type="text" placeholder="" name="" id="HABITACION-m" class="form-control" disabled>
+          <p>Fecha:</p>
+          <input type="text" placeholder="" name="" id="FECHA-m" class="form-control" disabled>
+          <p>Cuántos adultos:</p>
+          <input type="text" placeholder="ADULTO" name="" id="ADULTO-m" class="form-control" disabled>
+          <p>Cuántos niños</p>
+          <input type="text" placeholder="NIÑO" name="" id="NIÑO-m" class="form-control" disabled>
 
-                <div class="contendor-botton">
-                    <div class="btn btn-warning" onclick="run(6,5);">Anterior</div>
-                    <a class="btn btn-warning btn-reservar" onclick="generarPDF();">Reservar</a>
-                </div>
-            </div>
-        </form>
+          <div class="contendor-botton">
+            <div class="btn btn-warning" onclick="run(6,5);">Anterior</div>
+            <a class="btn btn-warning btn-reservar" onclick="generarPDF();">Reservar</a>
+          </div>
+        </div>
+
+      </form>
     </div>
     <!--Fin Formulario de reserva-->
 
@@ -184,54 +186,71 @@
     <div class="fondo-bot">
     </div>
 
-    <!--Footer-->
+    <!--Inicio footer-->
     <footer class="footer">
-        
-        <div class="botones">
-            <div class="footer-logo">
-                <a href="../index.html" class="logo"><img src="../img/logo.png" alt="" class="logo"></a>
-            </div>
-
-            <div class="contacto">
-                <h4>• Contacto:</h4>
-                <p>- Dirección: Partida Paraíso - La Villa Paradís</p>
-                <p>- Correo: support_harmony@email.com</p>
-                <p>- Tel: 0220-444-5657</p>
-            </div>
-            
-            <div class="redes">
-                <h4>• Redes Sociales:</h4>
-                <div class="icons">
-                    <div class="text"><a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a> Instagram</div>
-                    <div class="text"><a href="https://www.twitter.com" target="_blank"><i class="lab la-twitter"></i></a> Twitter</div>
-                    <div class="text"><a href="https://www.facebook.com" target="_blank"><i class="lab la-facebook"></i></a> Facebook</div>
-                </div>
-            </div>
-
-            <div class="pagos">
-                <h4>• Métodos de pago:</h4>
-                <div class="img-pagos">
-                    <div class="text"><img src="../img/american-expres.svg" alt="american-expres"> American Express</div>
-                    <div class="text"><img src="../img/mastercard.svg" alt="mastercard"> Mastercard</div>
-                    <div class="text"><img src="../img/visa.svg" alt="visa"> Visa</div>
-                </div>
-            </div>
-
-            <div class="map">
-                <h4> • Vení a Conocernos!</h4>
-                <div id="api">
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly" defer class="mapa"></script>
-                </div>
-            </div>
+      
+      <div class="botones">
+      
+        <div class="footer-logo">
+          <a href="../index.html" class="logo"><img src="../img/logo.png" alt="" class="logo"></a>
         </div>
-        <div class="copyright"><p>Hotel Harmony Residence. All rights reserved, 2023 - Website by Grupo 4</p></div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-        
+        <div class="contacto">
+          <h4>• Contacto:</h4>
+          <p>- Dirección: Partida Paraíso - La Villa Paradís</p>
+          <p>- Correo: support_harmony@email.com</p>
+          <p>- Tel: 0220-444-5657</p>
+        </div>
+
+        <div class="redes">
+          <h4>• Redes Sociales:</h4>
+          <div class="icons">
+            <div class="text">
+              <a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a> Instagram
+            </div>
+            <div class="text">
+              <a href="https://www.twitter.com" target="_blank"><i class="lab la-twitter"></i></a> Twitter
+            </div>
+            <div class="text">
+              <a href="https://www.facebook.com" target="_blank"><i class="lab la-facebook"></i></a> Facebook
+            </div>
+          </div>
+        </div>
+
+        <div class="pagos">
+          <h4>• Métodos de pago:</h4>
+          <div class="img-pagos">
+            <div class="text">
+              <img src="img/american-expres.svg" alt="american-expres"> American Express
+            </div>
+            <div class="text">
+              <img src="img/mastercard.svg" alt="mastercard"> Mastercard
+            </div>
+            <div class="text"><img src="img/visa.svg" alt="visa" /> Visa</div>
+          </div>
+        </div>
+
+        <div class="map">
+          <h4>• Vení a Conocernos!</h4>
+          <div id="api">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly" defer class="mapa"></script>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Hotel Harmony Residence. All rights reserved, 2023 - Website by Grupo 4
+        </p>
+      </div>
+
+    </footer>
+    <!--Fin footer-->
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>        
     <script type="text/javascript" src="../js/reserva.js"></script>
-</body>
+
+  </body>
 
 </html>

@@ -28,6 +28,10 @@
     block-size: fit-content;
 }
 */
+
+.navbar-toggler {
+    background-color: #ffbb00;
+}
 .nav-menu__items{
     position: relative;
     justify-content: flex-end;

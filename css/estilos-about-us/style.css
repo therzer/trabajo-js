@@ -40,8 +40,7 @@
 
 .hd {
   margin-left: 30px;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  font-size: 19px;
   text-decoration: none;
   color: #fffffe;
 }
@@ -66,7 +65,7 @@ body {
 
 .titulo {
   color:#ffbb00cc;
-  margin-left: 360px;
+  margin-left: 340px;
   position: relative;
   display: flex;
   width: 650px;
@@ -157,7 +156,7 @@ body {
 }
 
 .foto2 {
-  background-image: url();
+  background-image: url(foto-2.png);
   background-size: cover;
   position: relative; 
   display: flex;
@@ -172,20 +171,6 @@ body {
 
 .foto3 {
   background-image: url(foto-3.png);
-  background-size: cover;
-  position: relative; 
-  display: flex;
-  margin-left: 65px;
-  justify-content: center;
-  align-content: center;
-  width: 500px;
-  height: 500px;
-  border: 3px solid #f4f4f4;
-  border-radius: 100%;
-}
-
-.foto4 {
-  background-image: url(foto-4.png);
   background-size: cover;
   position: relative; 
   display: flex;

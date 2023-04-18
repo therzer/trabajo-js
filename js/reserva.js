@@ -34,7 +34,7 @@ function run(hideTab, showTab){
         if(hideTab == 2){
             var correoElectronico = document.getElementById("correo").value;
             var telefono = document.getElementById("telefono").value;   
-            var numerotelefono = /^[0-9]{10}$/
+            var numerotelefono = /^[0-9]{10}$/;
             var expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         
             if (!expresionRegular.test(correoElectronico)) {
@@ -70,14 +70,21 @@ function run(hideTab, showTab){
         }
 
         if(hideTab == 5){
-            var adulto = document.querySelector("#adulto").value;
 
-            if(7 > adulto < 1){
+            var adulto = document.querySelector("#adulto").value;
+            var ninio = document.querySelector("#ninio").value;
+
+            if(5 > adulto < 1){
                 var adult = document.getElementById('adulto');
                 adult.style.backgroundColor = '#ffdddd';
                 return false;
             }
-            
+            if(4 < ninio){
+                var adul = document.getElementById('ninio');
+                adul.style.backgroundColor = '#ffdddd';
+                return false;
+            }
+                  
         }
     }
 

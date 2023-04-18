@@ -21,6 +21,16 @@ function run(hideTab, showTab){
             }
         }
 
+        if(hideTab == 4){
+            var fechaDesde = document.querySelector("#fecha").value;
+            var fechaHast = document.querySelector("#fechaHasta").value;
+
+            if(fechaDesde > fechaHast){
+                var fecha = document.getElementById('fechaHasta');
+                fecha.style.backgroundColor = '#ffdddd';
+                return false;
+            }
+        }
         for(i = 0; i < y.length; i++){
             if(hideTab == 1){
                 var nombre = document.getElementById('nombre').value;
@@ -87,6 +97,7 @@ function recolector() {
     telefono1 = document.querySelector("#telefono").value;
     habitacion1 = document.querySelector("#habitaciones").value;
     fecha1 = document.querySelector("#fecha").value;
+    fechahasta = document.querySelector("#fechaHasta").value;
     adulto1 = document.querySelector("#adulto").value;
     ninio1 = document.querySelector("#ninio").value;
 }
@@ -100,6 +111,7 @@ function mostrar(){
     $("#TELEFONO-m").val(telefono1);
     $("#HABITACION-m").val(habitacion1);
     $("#FECHA-m").val(fecha1);
+    $("#hasta").val(fechahasta);
     $("#ADULTO-m").val(adulto1);
     $("#NIÑO-m").val(ninio1);
 }

@@ -134,7 +134,7 @@ function generarPDF(){
 
     recolector()
 
-    var titulo = "hotel-royal",
+    var titulo = "•~~• Harmony Residence •~~•",
     nombre = "Nombre:",
     apellido ="Apellido:",
     correo = "Correo:",

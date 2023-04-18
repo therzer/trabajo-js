@@ -76,14 +76,7 @@ function run(hideTab, showTab){
                 adult.style.backgroundColor = '#ffdddd';
                 return false;
             }
-        }/*
-        for(i = 0; i < y.length; i++){
-        /*
-            if(y[i].value == ""){
-                $(y[i]).css("background", "#ffdddd");
-                return false;
-            }
-        }*/
+        }
     }
 
     //barra de progreso

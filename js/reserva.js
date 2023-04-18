@@ -33,20 +33,21 @@ function run(hideTab, showTab){
 
         if(hideTab == 2){
             var correoElectronico = document.getElementById("correo").value;
-            var telefono = document.getElementById("telefono").value;
-            var expresionNum = /^[+-]?\d+(\.\d+)?$/;
+            var telefono = document.getElementById("telefono").value;   
+            var numerotelefono = /^[0-9]{10}$/
             var expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+        
             if (!expresionRegular.test(correoElectronico)) {
                 var correo = document.getElementById("correo");
                 correo.style.backgroundColor = '#ffdddd';
                 return false;
             }
-            if(!expresionNum.test(telefono)){
+            if(!numerotelefono.test(telefono)){
                 var telefono1 = document.getElementById("telefono");
                 telefono1.style.backgroundColor = '#ffdddd';
                 return false;
             }
+            
         }
 
         if(hideTab == 3){

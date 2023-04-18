@@ -34,7 +34,7 @@ function run(hideTab, showTab){
         if(hideTab == 2){
             var correoElectronico = document.getElementById("correo").value;
             var telefono = document.getElementById("telefono").value;   
-            var phoneRegex = /^\d{8,10}$/;
+            var numerotelefono = /^[0-9]{10}$/
             var expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         
             if (!expresionRegular.test(correoElectronico)) {
@@ -42,11 +42,12 @@ function run(hideTab, showTab){
                 correo.style.backgroundColor = '#ffdddd';
                 return false;
             }
-            if(!phoneRegex.test(telefono)){
+            if(!numerotelefono.test(telefono)){
                 var telefono1 = document.getElementById("telefono");
                 telefono1.style.backgroundColor = '#ffdddd';
                 return false;
             }
+            
         }
 
         if(hideTab == 3){

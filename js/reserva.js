@@ -78,7 +78,7 @@ function run(hideTab, showTab){
             }
         }/*
         for(i = 0; i < y.length; i++){
-           /*
+        /*
             if(y[i].value == ""){
                 $(y[i]).css("background", "#ffdddd");
                 return false;

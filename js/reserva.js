@@ -9,9 +9,7 @@ $("#tab-1").css("display","block");
 
 function run(hideTab, showTab){
     //validacion
-    if(hideTab < showTab){/*
-        x = $("#tab-"+hideTab);
-        y = $(x).find("input", "select");*/
+    if(hideTab < showTab){
 
         if(hideTab == 1){
             var nombre = document.getElementById('nombre').value;
@@ -83,8 +81,7 @@ function run(hideTab, showTab){
                 var adul = document.getElementById('ninio');
                 adul.style.backgroundColor = '#ffdddd';
                 return false;
-            }
-                  
+            }    
         }
     }
 
@@ -133,7 +130,6 @@ function mostrar(){
 /////PDF
 
 function generarPDF(){
-
     recolector()
 
     var titulo = "hotel-royal",
@@ -146,7 +142,7 @@ function generarPDF(){
     adulto = "Adultos:",
     ninio = "Niños:";
 
-    const { jsPDF } = window.jsPDF;
+    const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
 
 

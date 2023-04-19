@@ -17,7 +17,7 @@ function run(hideTab, showTab){
             
             var regularNombre = /^[A-Za-z]+$/;
             
-            if(!regularNombre.test(nombre)){
+            if(!regularNombre.test(nombre) ){
                 var nombre1 = document.getElementById("nombre");
                 nombre1.style.backgroundColor = '#ffdddd';
                 return false;  

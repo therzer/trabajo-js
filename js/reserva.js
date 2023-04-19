@@ -132,13 +132,14 @@ function mostrar(){
 function generarPDF(){
     recolector()
 
-    var titulo = "hotel-royal",
+    var titulo = "•~~• Harmony Residence •~~•",
     nombre = "Nombre:",
     apellido ="Apellido:",
     correo = "Correo:",
     telefono = "Telefono:",
     habitacion = "Habitación:",
-    fecha = "Fecha:",
+    fechaAct = "Fecha Desde:",
+    fechaAsta = "Fecha Hasta:",
     adulto = "Adultos:",
     ninio = "Niños:";
 
@@ -153,7 +154,7 @@ function generarPDF(){
     var logo = new Image();
     logo.src = '../img/logo.png';
 
-    doc.setFontSize(20);
+    doc.setFontSize(15);
     doc.addImage(logo,'PNG',10, 5, 25,25);
     doc.text(titulo, 40, 20);
     doc.text(fecha + ' ' + fechaActualTexto, 120, 20);
@@ -167,9 +168,10 @@ function generarPDF(){
     doc.text(correo + ' ' + correo1, 20, 69);
     doc.text(telefono + ' ' + telefono1, 20, 79);
     doc.text(habitacion + ' ' + habitacion1, 20, 89);
-    doc.text(fecha + ' ' + fecha1, 20, 99);
-    doc.text(adulto + ' ' + adulto1, 20, 109);
-    doc.text(ninio + ' ' + ninio1, 20, 119);
+    doc.text(fechaAct + ' ' + fecha1, 20, 99);
+    doc.text(fechaAsta+ '' +fechahasta, 20, 109)
+    doc.text(adulto + ' ' + adulto1, 20, 119);
+    doc.text(ninio + ' ' + ninio1, 20, 129);
     doc.save("Reserva.pdf");
 }
 

@@ -11,4 +11,4 @@ function iniciarMap() {
     map: map
   })
 }
-window.iniciarMap = iniciarMap;
+iniciarMap();
